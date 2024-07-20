@@ -1,4 +1,5 @@
 import Options from "./Options";
+
 function Question({ dispatch, question, answer, index }) {
   return (
     <div>

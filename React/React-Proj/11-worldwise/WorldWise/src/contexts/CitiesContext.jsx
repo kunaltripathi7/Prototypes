@@ -81,7 +81,7 @@ function CitiesProvider({ children }) {
         headers: { "Content-Type": "application/json" }, // tells the content is in json
       });
       const data = await res.json(); // returns with id
-      // setCities([...cities, data]); // syncing remote state with ui state || REAct query optimise
+      // setCities([...cities, data]); // syncing remote state with ui state || React query optimise
       dispatch({ type: "city/created", payload: data });
     } catch (err) {
       dispatch({
@@ -154,5 +154,5 @@ function useCities() {
 
 export { CitiesProvider, useCities };
 
-// 2 options with dispatch -> eithere pass dispatch+states and the async 1. func's in the compo -> compo not clean || don't pass dispatch, instead pass func's in which we have used dispatch
+// 2 options with dispatch -> either pass dispatch+states and the async 1. func's in the compo -> compo not clean || don't pass dispatch, instead pass func's in which we have used dispatch
 // 2. if not include async data -> pass dispatch better. (just for cleaner code) cuz if involved api call can't place in reducer (pure func.) -< will make messy

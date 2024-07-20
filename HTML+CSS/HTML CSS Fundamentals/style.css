@@ -273,7 +273,7 @@ Shorthand -> #44444 -> hash444
 # inline elements -> em, links (a),strong; > heights and width don't apply & paddings and margins applied only horizontally
 images-> inline block elements
 
-Positioning :
+Positioning:
 for the like button set position relative of the parent element with relation to what you want the like buttton to be placed
 static: normal
 relative : same as static but can modify left, right, top , left. is removed from the document flow. it will overlap or overflow cuz it will move as it would have normally been if there was no parent element,
