@@ -44,7 +44,6 @@ export default function App() {
   // useEffect(
   //   // why this meth ? -> automatically deletes the watched as well -> synchronizes with ui ele
   //   function () {
-
   //     localStorage.setItem("watched", JSON.stringify(watched));
   //   },
   //   [watched]

@@ -117,7 +117,7 @@ function Main({ children }) {
   return <main className="main">{children}</main>;
 }
 
-//reusable box compo {IMPOrtant}
+//reusable box compo {ImpOrtant}
 function Box({ children }) {
   const [isOpen, setIsOpen] = useState(true);
   return (

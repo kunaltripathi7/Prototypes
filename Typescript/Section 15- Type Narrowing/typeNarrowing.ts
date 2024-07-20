@@ -20,9 +20,9 @@
 //     return (animal as Cat).numLives !== undefined; // function should return boolean;
 // }
 
-// function (makeNoise: Cat | Dog) {
+// function (makeNoise: Cat | Dog) { ..passed at runtime
 //     if (isCat(makeNoise)) {
-
+//        console.log(animal.numLives); // Safe to use `numLives`
 //     }
 //     else {
 

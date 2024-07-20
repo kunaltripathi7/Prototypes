@@ -1,1 +1,0 @@
-export {meth1} from './library.js'; // acts a bridge

@@ -354,7 +354,7 @@ function MovieDetails({ selectedId, onCloseMovie, onAddMovie, watched }) {
 
   useEffect(
     function () {
-      // changing title is a side effect || each useeffect does one thing
+      // changing title is a side effect || each useeffect does one thing.
       if (!title) return;
       document.title = `Movie | ${title}`;
 
