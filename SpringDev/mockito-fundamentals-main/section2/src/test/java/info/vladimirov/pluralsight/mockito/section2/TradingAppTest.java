@@ -16,6 +16,7 @@ class TradingAppTest {
 
     @Test
     void executeTradeGuaranteeHappyPath() {
+        //dependencies
         AuditReport auditRepo = Mockito.mock();
         Exchange exchange = mock();
         MarketData marketData = mock();
@@ -37,6 +38,7 @@ class TradingAppTest {
         boolean executionOutcome = tradingApp.executeTradeGuarantee(symbol, qty, px);
         Assertions.assertTrue(executionOutcome);
 
+        //checking of mocking as well
         Mockito.verify(marketData).isCurrentOrderPossible(symbol, qty, px);
 
         Mockito.verify(auditRepo).reportTrade(Mockito.anyString(), Mockito.eq(qty), Mockito.eq(px));

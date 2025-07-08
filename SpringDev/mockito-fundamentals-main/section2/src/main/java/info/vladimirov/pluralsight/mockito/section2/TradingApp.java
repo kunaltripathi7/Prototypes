@@ -37,6 +37,7 @@ public class TradingApp {
         } catch (InterruptedException e) {
             //intentionally left
         }
+
         audit.reportFailedTrade("Trade for symbol " + symbol + " failed.", qty, price);
         return false;
 
