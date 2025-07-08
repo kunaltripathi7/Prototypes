@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tickets" />
+        <module name="tickets (3)" />
+        <module name="tickets (2)" />
+        <module name="tickets (1)" />
+        <module name="registration-service (2)" />
+        <module name="registration-service" />
+        <module name="registration-service (1)" />
+        <module name="events-service (2)" />
+        <module name="events-service (1)" />
+        <module name="events-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="events-service" options="-parameters" />
+      <module name="events-service (1)" options="-parameters" />
+      <module name="events-service (2)" options="-parameters" />
+      <module name="registration-service" options="-parameters" />
+      <module name="registration-service (1)" options="-parameters" />
+      <module name="registration-service (2)" options="-parameters" />
+      <module name="tickets" options="-parameters" />
+      <module name="tickets (1)" options="-parameters" />
+      <module name="tickets (2)" options="-parameters" />
+      <module name="tickets (3)" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/02/demos/01-create-an-app/pom.xml" />
+        <option value="$PROJECT_DIR$/03/demos/02-rest-web-services/pom.xml" />
+        <option value="$PROJECT_DIR$/04/demos/03-database-spring-data-1/pom.xml" />
+        <option value="$PROJECT_DIR$/04/demos/03-database-spring-data-2/pom.xml" />
+        <option value="$PROJECT_DIR$/05/demos/04-calling-web-services/pom.xml" />
+        <option value="$PROJECT_DIR$/06/demos/05-spring-boot-actuator/pom.xml" />
+        <option value="$PROJECT_DIR$/07/demos/06-packaging-docker/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="23" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

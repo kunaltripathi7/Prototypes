@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/02/demos/01-create-an-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03/demos/02-rest-web-services/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04/demos/03-database-spring-data-1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04/demos/03-database-spring-data-2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05/demos/04-calling-web-services/events-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05/demos/04-calling-web-services/registration-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05/demos/04-calling-web-services/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05/demos/04-calling-web-services/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06/demos/05-spring-boot-actuator/events-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06/demos/05-spring-boot-actuator/registration-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06/demos/05-spring-boot-actuator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06/demos/05-spring-boot-actuator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07/demos/06-packaging-docker/events-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07/demos/06-packaging-docker/registration-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07/demos/06-packaging-docker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07/demos/06-packaging-docker/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
