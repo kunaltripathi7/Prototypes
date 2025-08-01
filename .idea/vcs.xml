@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Jenkins/install-jenkins-docker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/NestJs/l1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/NestJs/type-orm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SpringDev/Microservices-Practice-28Mins/git-localconfig-repo" vcs="Git" />
+  </component>
+</project>
