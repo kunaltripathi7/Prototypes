@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c5907d83-6a3c-43c7-8f88-583e6545a8c1" name="Changes" comment="Update submodule with new files">
+      <change beforePath="$PROJECT_DIR$/../api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/microservices/currency_conversion_service/CurrencyConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/src/main/java/com/microservices/currency_conversion_service/CurrencyConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/microservices/currency_conversion_service/CurrencyConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/src/main/java/com/microservices/currency_conversion_service/CurrencyConversionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/microservices/currency_conversion_service/CurrencyConversionServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/src/main/java/com/microservices/currency_conversion_service/CurrencyConversionServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/java/com/microservices/currency_conversion_service/CurrencyExchangeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/src/main/java/com/microservices/currency_conversion_service/CurrencyExchangeProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-service/src/test/java/com/microservices/currency_conversion_service/CurrencyConversionServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion/src/test/java/com/microservices/currency_conversion_service/CurrencyConversionServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/microservices/currency_exchange_service/CircuitBreakerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/microservices/currency_exchange_service/CurrencyExchange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/microservices/currency_exchange_service/CurrencyExchangeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/microservices/currency_exchange_service/CurrencyExchangeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/microservices/currency_exchange_service/CurrencyExchangeServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/microservices/currency_exchange_service/CurrencyExchangeServiceApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="30gM4L8ilbj5dVIOdDR250ZcEWB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CurrencyConversionServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CurrencyExchangeServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CurrencyExchangeServiceApplication8000.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CurrencyExchangeServiceApplication8001.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EurekaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ikuna/Stuff/Development/Practice/SpringDev/Microservices-Practice-28Mins/currency-exchange-service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.microservices.currency_conversion_service" />
+      <recent name="com.microservices.currency_exchange_service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ikuna\Stuff\Development\Practice\SpringDev\Microservices-Practice-28Mins\api-gateway\src\main\java\com\microservices\api_gateway" />
+      <recent name="C:\Users\ikuna\Stuff\Development\Practice\SpringDev\Microservices-Practice-28Mins\eureka" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CurrencyExchangeServiceApplication8000">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.microservices.api_gateway.ApiGatewayApplication" />
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.api_gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyConversionServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.microservices.currency_conversion_service.CurrencyConversionServiceApplication" />
+      <module name="currency-conversion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.currency_conversion_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyExchangeServiceApplication8000" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.microservices.currency_exchange_service.CurrencyExchangeServiceApplication" />
+      <module name="currency-exchange" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.currency_exchange_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyExchangeServiceApplication8001" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.microservices.currency_exchange_service.CurrencyExchangeServiceApplication" />
+      <module name="currency-exchange" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.currency_exchange_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.microservices.eureka.EurekaApplication" />
+      <module name="eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ApiGatewayApplication" />
+      <item itemvalue="Application.CurrencyConversionServiceApplication" />
+      <item itemvalue="Application.CurrencyExchangeServiceApplication8000" />
+      <item itemvalue="Application.CurrencyExchangeServiceApplication8001" />
+      <item itemvalue="Application.EurekaApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CurrencyExchangeServiceApplication8000" />
+        <item itemvalue="Application.CurrencyConversionServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.EurekaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5907d83-6a3c-43c7-8f88-583e6545a8c1" name="Changes" comment="" />
+      <created>1754044570056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1754044570056</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update submodule with new files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update submodule with new files" />
+  </component>
+</project>
