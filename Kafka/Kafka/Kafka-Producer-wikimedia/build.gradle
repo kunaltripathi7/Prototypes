@@ -1,17 +1,22 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 
-group 'io.conduktor.demos'
-version '1.0-SNAPSHOT'
+group = 'org.Stream'
+version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
-    
-dependencies {
+shadowJar {
+    archiveBaseName.set(project.name)
+    archiveClassifier.set('all')
+    mergeServiceFiles()
+}
 
+dependencies {
     // https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
     implementation 'org.apache.kafka:kafka-clients:3.3.1'
 
@@ -26,6 +31,8 @@ dependencies {
 
     // https://mvnrepository.com/artifact/com.launchdarkly/okhttp-eventsource
     implementation 'com.launchdarkly:okhttp-eventsource:2.5.0'
+
+    implementation 'org.xerial.snappy:snappy-java:1.1.10.4'
 
 }
 
