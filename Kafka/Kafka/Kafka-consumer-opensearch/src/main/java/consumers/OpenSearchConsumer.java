@@ -11,7 +11,10 @@ import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.errors.WakeupException;
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.opensearch.action.bulk.BulkRequest;
+import org.opensearch.action.bulk.BulkResponse;
 import org.opensearch.action.index.IndexRequest;
 import org.opensearch.action.index.IndexResponse;
 import org.opensearch.client.*;
@@ -124,6 +127,20 @@ public class OpenSearchConsumer {
 
         consumer.subscribe(Collections.singleton("wikimedia.recentchange"));
 
+        final Thread mainThread = Thread.currentThread();
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            public void  run() {
+                logger.info("Detected a shutdown, let's exit by calling consumer.wakeup(//");
+                consumer.wakeup();
+                try {
+                    mainThread.join();
+                }
+                catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
 
         try (client; consumer) {
             ensureIndexExists(client, "wikimedia");
@@ -131,19 +148,38 @@ public class OpenSearchConsumer {
                 ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(3000));
                 int recordCount = records.count();
                 logger.info("Received " + String.valueOf(recordCount) + "records");
+                BulkRequest bulkRequest = new BulkRequest();
                 for (ConsumerRecord<String, String> record : records) {
                     String id = extractId(record.value());
                     IndexRequest indexRequest = new IndexRequest("wikimedia").source(record.value(), XContentType.JSON).id(id);
 
-                    IndexResponse response = client.index(indexRequest, RequestOptions.DEFAULT);
-                    logger.info(response.getId());
+//                    IndexResponse response = client.index(indexRequest, RequestOptions.DEFAULT);
+                    bulkRequest.add(indexRequest);
+//                    logger.info(response.getId());
                 }
-                consumer.commitSync();
-                logger.info("Offsets have been committed");
+
+                if (bulkRequest.numberOfActions() > 0) {
+                    BulkResponse response = client.bulk(bulkRequest, RequestOptions.DEFAULT);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    consumer.commitSync();
+                    logger.info("Offsets have been committed");
+
+                }
             }
         } catch (IOException e) {
             logger.error("Error communicating with OpenSearch", e);
             System.exit(1);
+        }   catch (WakeupException e) {
+            logger.info("Consumer is starting to shut down");
+        } catch (Exception e) {
+            logger.error("Unexpected exception in the consumer", e);
+        } finally {
+            consumer.close(); // close the consumer, this will also commit offsets
+            logger.info("The consumer is now gracefully shut down");
         }
 
 
