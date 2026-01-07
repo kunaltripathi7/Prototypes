@@ -5,10 +5,10 @@ import java.util.List;
 
 public class YoutubeChannel {
 
-    public List<Subscriber> subscribers = new ArrayList<>();
-    public String video;
+    private List<Subscriber> subscribers = new ArrayList<>();
+    private String video;
 
-    public void addSubscriber(YoutubeSubscriber subscriber) {
+    public void addSubscriber(Subscriber subscriber) {
         subscribers.add(subscriber);
     }
 
