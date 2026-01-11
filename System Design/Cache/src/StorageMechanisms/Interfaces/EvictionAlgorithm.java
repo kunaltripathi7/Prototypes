@@ -1,6 +1,6 @@
 package StorageMechanisms.Interfaces;
 
 public interface EvictionAlgorithm<K> {
-    void evictKey();
+    K evictKey();
     void updateKeyAccessed(K Key);
 }

@@ -33,6 +33,19 @@ Per subscriber → TopicSubscriberController
 That’s the separation.
 
 
+clarifying:
+
+Do you require ordering guarantees per key/partition or only eventual delivery? — decides partitioning and whether per-key sequencing is required.
+
+Which delivery semantics do you want: at-most-once, at-least-once, or exactly-once? — drives use of transactions, idempotence, and consumer logic.
+
+What are expected message sizes, throughput (msgs/sec), and retention window? — impacts batching, compression, and storage design.
+
+How should consumer failures be handled: retries, dead-letter queue, or skip? — affects DLQ design and retry policies.
+
+Do consumers belong to consumer groups (competing consumers) or should each get all messages (pub-sub fanout)? — defines subscription model and offsets.
+
+
 
 public class TopicProducerController {  the name shows what objects it will coordinate to -> these two refrences it will hold ofcourse
 

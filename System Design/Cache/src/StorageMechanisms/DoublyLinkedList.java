@@ -12,8 +12,14 @@ public class DoublyLinkedList<K> {
     }
 
     Node<K> getHead() {
-        if (dummyHead.next == dummyTail) throw new IllegalStateException("No Head is there");
+        if (dummyHead.next == dummyTail) return null;
         return dummyHead.next;
+    }
+
+
+    Node<K> getTail() {
+        if (dummyTail.prev == dummyHead) return null;
+        return dummyTail.prev;
     }
 
     void insertAfterHead(Node<K> node) {

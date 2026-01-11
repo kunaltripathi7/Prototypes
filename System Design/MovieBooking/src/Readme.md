@@ -10,6 +10,17 @@ Should I just focus on the booking flow and the concurrency booking  What do you
 When should I prevent double booking 
 And one user should be able to book one seat at a time or double nice seats at a time  
 
+Clarifying:
+When should we lock a seat: on selection, at payment start, or only after payment succeeds? — determines locking strategy, UX, and complexity.
+
+How long is a seat hold allowed (timeout) before it’s released — e.g., 5–10 minutes? — defines timers and cleanup logic.
+
+Do we require atomic group booking (all seats succeed or none)? — decides whether to implement transactional semantics across multiple seat locks.
+
+Do we allow optimistic retries (client retries on conflict) or require pessimistic locking (first-come-first-served)? — affects contention design and throughput.
+
+Are seat-map reads allowed to be eventually consistent (stale) or must they be strongly consistent for the UX? — impacts caching and read performance.
+
 
 entities -> Theatre (screens), Seat(id), Show(seat, time, duration), Movie(name, id), Screen(seat), Booking(id, user, seats), User(name, id), payment(payment method, amount, id)
 relationship classes -> Screen → Seat: NO class. Seat is owned by Screen (composition)., Show-Seat(holds state -> Time, seatid, seatStatus? (state). (SeatStatus), SeatLock(time, expiry(never store the derived fields) lockedBy)

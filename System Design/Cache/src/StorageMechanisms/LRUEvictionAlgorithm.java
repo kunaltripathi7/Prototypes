@@ -10,14 +10,24 @@ public class LRUEvictionAlgorithm<K, V> implements EvictionAlgorithm<K> {
     private Map<K, Node<K>> valuesMap = new HashMap<>();
 
     @Override
-    public void evictKey() {
+    public synchronized K evictKey() {
+        Node<K> nodeToEvict = dll.getTail();
+        if (nodeToEvict == null) return null;
         dll.removelastNode();
+        return nodeToEvict.value;
     }
 
     @Override
-    public void updateKeyAccessed(K key) {
+    public synchronized void updateKeyAccessed(K key) {
+        if (valuesMap.containsKey(key)) {
         Node<K> accessedNode = valuesMap.get(key);
         dll.detachNode(accessedNode);
         dll.insertAfterHead(accessedNode);
+        }
+        else {
+            Node<K> newNode =new  Node<K>(key);
+            dll.insertAfterHead(newNode);
+            valuesMap.put(key, newNode);
+        }
     }
 }
