@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
 public interface ATMState {
+    String getCurrentState();
+    void advanceState(ATMContext context);
 }

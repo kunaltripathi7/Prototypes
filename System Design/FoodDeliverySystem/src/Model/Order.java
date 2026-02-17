@@ -7,7 +7,6 @@ import java.util.List;
 public class Order {
     private final int orderId;
     private final int locationId;
-
     private final List<OrderItem> items = new ArrayList<>();
     private OrderStatus status = OrderStatus.CREATED;
     private Payment payment;

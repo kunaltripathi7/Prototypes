@@ -20,7 +20,7 @@ public abstract class Vehicle {
 
     public double calculateFee() {
         long currentTime = System.currentTimeMillis();
-        long totalDuration = (long) Math.ceil((double) (currentTime - startTime) / 1000*60*60*60);
+        long totalDuration = (long) Math.ceil((currentTime - startTime) / 1000*60*60);
         return pricingStrategy.calculatFee(type, totalDuration);
     }
 

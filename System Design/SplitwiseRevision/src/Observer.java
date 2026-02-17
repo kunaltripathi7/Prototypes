@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
 public interface Observer {
+    void onExpenseAdded(Expense expense);
+    void onExpenseRemoved(Expense expense);
 }

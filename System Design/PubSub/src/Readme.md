@@ -28,7 +28,7 @@ Is this logic global or per subscriber?
 
 Global → KafkaController
 
-Per subscriber → TopicSubscriberController
+Per subscriber → TopicSubscriberControllerz
 
 That’s the separation.
 

@@ -1,4 +1,17 @@
-package PACKAGE_NAME;
+public class HasCardState implements ATMState{
+    @Override
+    public String getCurrentState() {
+        return "HasCardState";
+    }
 
-public class HasCardState {
+    @Override
+    public void advanceState(ATMContext context) {
+        if (context.getCard() == null) {
+            context.setCurrentState(context.getStateFactory().createtIdleState());
+        }
+        if (context.getAccount() != null) {
+
+            context.setCurrentState(context.getStateFactory().createSelectOperationState());
+        }
+    }
 }

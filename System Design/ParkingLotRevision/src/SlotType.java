@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
 public enum SlotType {
+    CAR,
+    TRUCK,
+    BIKE
 }

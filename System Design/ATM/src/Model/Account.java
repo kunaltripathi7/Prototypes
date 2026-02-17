@@ -2,17 +2,22 @@ package Model;
 
 public class Account {
     private final int accountNumber;
-    private double balance;
+    private int balance;
 
     public double getBalance() {
         return balance;
     }
 
-    public void setBalance(double balance) {
+    public void setBalance(int balance) {
         this.balance = balance;
     }
 
-    public Account(int accountNumber) {
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public Account(int accountNumber, int balance) {
         this.accountNumber = accountNumber;
+        this.balance = balance;
     }
 }

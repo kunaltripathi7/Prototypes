@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
 public interface ParkingFeeStrategy {
+    double calculateFee(int duration, VehicleType vehicleType);
 }

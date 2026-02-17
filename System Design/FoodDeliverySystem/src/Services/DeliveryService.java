@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class DeliveryService {
     private final OrderService orderService;
     private final Map<Integer, List<DeliveryExecutive>> executivesByLocation = new ConcurrentHashMap<>();
-    private final Set<Integer> unavailableExecutives = ConcurrentHashMap.newKeySet();
+//    private final Set<Integer> unavailableExecutives = ConcurrentHashMap.newKeySet();
 
     public DeliveryService(OrderService orderService) {
         this.orderService = orderService;

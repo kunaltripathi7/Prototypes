@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+public class IdleState implements ATMState{
+    @Override
+    public String getCurrentState() {
+        return "IdleState";
+    }
 
-public class IdleState {
+    @Override
+    public void advanceState(ATMContext context) {
+        if (context.getCard() != null) {
+            context.setCurrentState(new HasCardState());
+        }
+    }
 }
