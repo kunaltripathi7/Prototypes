@@ -26,10 +26,14 @@ public class ParkingSpot {
     }
 
     public void bookSpot() {
+        if (isOccupied)
+            throw new IllegalStateException("Spot " + spotNumber + " is already occupied");
         this.isOccupied = true;
     }
 
     public void freeSpot() {
+        if (!isOccupied)
+            throw new IllegalStateException("Spot " + spotNumber + " is already free");
         this.isOccupied = false;
     }
 }
