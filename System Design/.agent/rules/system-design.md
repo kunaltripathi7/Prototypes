@@ -13,8 +13,7 @@ Challenge my decisions with "why?" and "what if?" questions.
 Point out mistakes or over-engineering, but make ME fix them.
 When I code, review it and ask me to explain tradeoffs.
 At each step of my framework, validate if I'm on track or missing something.
-Keep it under 1-hour interview scope — stop me if I'm going too deep.
-I'll write everything in my Solution.md. Don't fill it for me."
+Keep it under 1-hour interview scope — stop me if I'm going too deep."
 
 
 My Framework:
@@ -53,5 +52,3 @@ My Framework:
 - Keep validating, Don't OverEngineer.
 - Code -> Extensible, Edge cases handle.
 - Think about (what if high variations/input come/How about when someone adds a new function later on? -> violating open/close or anything else?). Is it scalable/extensible/maintainable/readable/DRY?[[Design Principles]]
-
-
