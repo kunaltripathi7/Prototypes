@@ -1,0 +1,47 @@
+enum AssetType {
+    STOCK
+    BOND
+}
+
+interface Asset {
+    id: ID!
+    symbol: String!
+    name: String!
+    assetType: AssetType!
+}
+
+type Stock implements Asset {
+    id: ID!
+    symbol: String!
+    name: String!
+    assetType: AssetType!
+    exchange: String!
+}
+
+type Bond implements Asset {
+    id: ID!
+    symbol: String!
+    name: String!
+    assetType: AssetType!
+    couponRate: Float!
+}
+
+input AddStockInput {
+    symbol: String!
+    name: String!
+    exchange: String!
+}
+
+type Query {
+    assets: [Asset]
+    asset(id: ID!): Asset
+}
+
+type Mutation {
+    addStock(input: AddStockInput!): Stock
+    removeAsset(id: ID!): Boolean
+}
+
+type Subscription {
+    assetAdded: Asset
+}
