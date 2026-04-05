@@ -33,15 +33,15 @@ input AddStockInput {
 }
 
 type Query {
-    assets: [Asset]
+    assets: [Asset]! # how to map Stock to Asset
     asset(id: ID!): Asset
 }
 
 type Mutation {
-    addStock(input: AddStockInput!): Stock
-    removeAsset(id: ID!): Boolean
+    addStock(input: AddStockInput!): Stock!
+    removeAsset(id: ID!): Boolean!
 }
 
 type Subscription {
-    assetAdded: Asset
+    assetAdded: Asset!
 }
