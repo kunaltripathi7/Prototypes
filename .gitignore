@@ -1,2 +1,17 @@
 node_modules
 tools
+
+# Gradle build artifacts
+.gradle/
+build/
+*.bin
+*.lock
+*.ser
+*.html
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
