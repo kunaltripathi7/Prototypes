@@ -4,9 +4,8 @@ import (
 	"io"
 	"log"
 	"net"
+	"redis/config"
 	"strconv"
-
-	"github.com/dicedb/dice/config"
 )
 
 func readCommand(c net.Conn) (string, error) {
@@ -41,7 +40,7 @@ func RunSyncTCPServer() {
 
 	for {
 		// blocking call: waiting for the new client to connect
-		c, err := lsnr.Accept()
+		c, err := lsnr.Accept() // waiting in the queue in os kernel new connections
 		if err != nil {
 			panic(err)
 		}
